@@ -10,7 +10,7 @@
   "url": "https://github.com/DMA-digital-for-business/loyalty-auth.git",
   "license": "MIT",
   "private": false,
-  "version": "0.0.9",
+  "version": "0.0.10",
   "main": "index.js",
   "devDependencies": {
     "@types/node": "^20.11.28",
@@ -23,7 +23,6 @@
     "aws-sdk": "^2.1579.0",
     "crypto": "^1.0.1",
     "crypto-browserify": "^3.12.0",
-    "dotenv": "^16.4.5",
     "os": "^0.1.2",
     "path": "^0.12.7"
   },
