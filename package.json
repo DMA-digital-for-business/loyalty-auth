@@ -1,11 +1,16 @@
 {
   "name": "loyalty-auth",
-  "keywords": ["loyalty","cognito","authentication","diemmea"],
+  "keywords": [
+    "loyalty",
+    "cognito",
+    "authentication",
+    "diemmea"
+  ],
   "author": "Matteo Collina",
   "url": "https://github.com/DMA-digital-for-business/loyalty-auth.git",
   "license": "MIT",
   "private": false,
-  "version": "0.0.4",
+  "version": "0.0.5",
   "main": "index.js",
   "devDependencies": {
     "@types/node": "^20.11.28",
@@ -13,7 +18,10 @@
   },
   "dependencies": {
     "aws-sdk": "^2.1579.0",
-    "dotenv": "^16.4.5"
+    "crypto": "^1.0.1",
+    "dotenv": "^16.4.5",
+    "os": "^0.1.2",
+    "path": "^0.12.7"
   },
   "scripts": {
     "build": "npx tsc"
