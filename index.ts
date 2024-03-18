@@ -2,10 +2,12 @@ import * as AWS from 'aws-sdk';
 import { CognitoIdentityServiceProvider } from 'aws-sdk';
 
 class LoyaltyAuth {
+  private _accessKeyId: string = "";
   private _client:AWS.CognitoIdentityServiceProvider|null = null;
   
   public static factory(accessKeyId:string, region:string):LoyaltyAuth{
     let _ = new LoyaltyAuth()
+    _._accessKeyId = accessKeyId;
     _._client = new AWS.CognitoIdentityServiceProvider({
       accessKeyId: accessKeyId,
       region: region
@@ -19,7 +21,7 @@ class LoyaltyAuth {
   ):Promise<CognitoIdentityServiceProvider.InitiateAuthResponse>{
     const params = {
       AuthFlow: 'USER_PASSWORD_AUTH',
-      ClientId: process.env.AWS_ACCESS_KEY_ID!,
+      ClientId: this._accessKeyId,
       AuthParameters: {
         USERNAME: username,
         PASSWORD: password,
