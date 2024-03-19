@@ -9,9 +9,8 @@
   "url": "https://github.com/DMA-digital-for-business/loyalty-auth.git",
   "license": "MIT",
   "private": false,
-  "version": "0.0.15",
+  "version": "0.0.16",
   "main": "dist/index.js",
-  "files": ["dist/**"],
   "devDependencies": {
     "@types/node": "^20.11.28",
     "typescript": "^5.4.2"
