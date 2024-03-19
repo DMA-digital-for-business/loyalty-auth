@@ -1,4 +1,4 @@
-# My Cognito Package
+# Loyalty Auth
 
 This package is useful for authenticating the user to [Loyaltyone](https://loyaltyone.io) as a user (not valid for admin users)
 
