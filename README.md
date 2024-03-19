@@ -12,22 +12,21 @@ npm i loyalty-auth
 
 ## Configuration
 
-Before using the methods, you need to configure your AWS credentials and the Cognito User Pool details. This package assumes you have the following environment variables set:
+Before using the methods, you need to configure your Loyalty credentials and the Loyalty User Pool details. This package assumes you have the following variables set:
 
-**AWS_ACCESS_KEY_ID**: Your AWS Access Key ID.
+**CLIENT_ID**: Your Loyalty Access Key ID.
 
-**AWS_REGION**: The region your AWS Cognito User Pool is located in.
+**REGION**: The region your Loyalty User Pool is located in.
 
-You can use the dotenv package to load these variables from a .env file for development purposes.
 
 
 ```jsx
-const { login } = require('loyalty-auth');
+import LoyaltyAuth from "loyalty-auth";
 
 async function loginUser() {
   try {
-    const session = await login('username', 'password');
-    console.log(session);
+    const client = LoyaltyAuth.client("<CLIENT_ID>","<REGION>");
+    const session:LoyaltyAuthLoginOutput = await client.login("<EMAIL_ADDRESS>","<PASSWORD>");
     // Use the session information as needed
   } catch (error) {
     console.error(error);

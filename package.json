@@ -6,10 +6,10 @@
     "diemmea"
   ],
   "author": "Matteo Collina",
-  "url": "https://github.com/DMA-digital-for-business/loyalty-auth.git",
+  "url": "https://www.loyaltyone.io",
   "license": "MIT",
   "private": false,
-  "version": "0.0.17",
+  "version": "1.0.0",
   "main": "dist/index.js",
   "types": "dist/index.d.ts", 
   "files": [
